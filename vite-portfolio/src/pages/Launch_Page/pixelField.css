@@ -1,0 +1,13 @@
+.pixel-field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+ 
+.pixel-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+}
+ 

@@ -1,0 +1,39 @@
+.about-me-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 70px; 
+
+}
+
+.content-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-family: monospace;
+  font-weight: 700;
+  color: #8c9a5b;
+}
+
+.about-me-page .container {
+  max-width: 1100px;
+  margin: 0 auto;   /* ← centrerer BOKSEN på siden */
+}
