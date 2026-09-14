@@ -18,7 +18,7 @@ export default function Showcase() {
     <div className="page-content">
     
         <nav className="topbar">
-            <Link to="/" className="back-link">&larr; Forside</Link>
+            <Link to="/" className="back-link">&larr; Front Page</Link>
             <span className="logo">
                 <TypewriterText 
                 text="Josefine Wyrtz"
@@ -42,10 +42,15 @@ export default function Showcase() {
                     
                 <h1 className="pro-h1">Projects</h1>
                     <p className="subtitle">
-                    Below you can view my projects. Some projects are made in collaboration with other students, and other projects are personal. You can visit my GitHub to find the code for all the projects.
+                    Below you can view my projects. Some projects are made in collaboration with other students, and other projects are personal. You can visit my GitHub to find the code for some of the projects.
                     </p>
-                    <a href="" className="button">
-                        GitHub
+                    <a 
+                    href="https://github.com/Josefine2401" 
+                    className="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    GitHub
                     </a>
             </header>
 
@@ -65,13 +70,13 @@ export default function Showcase() {
 
                 <ProjectCard 
                 title="Plantwhipserer"
-                description="Projektet undersøger, hvordan en LLM-baseret chatbot kan anvendes i køkkenhavearbejde."
+                description="This project explores the design and use of LLM-based conversational AI for supporting plant care, and it focuses on how natural language interaction and context-aware recommendations can assist users in understanding plant needs and making appropriate care decisions."
                 image={App_Pages}
                 tags={["Collaboration", "Figma", "Flutter", "2025"]}
                 />
                 <ProjectCard 
                 title="Fortune Teller Mini Games"
-                description="Applikationen består af tre forskellige minispil, som brugeren kan afprøve. Projektets primære fokus har været funktionalitet frem for grafisk udtryk."
+                description="This is an exam project for the course in object oriented programming. The application consists of three different minigames that users can try out. The primary focus of the project has been on functionality rather than graphical design."
                 image={FortuneTeller}
                 tags={[ "Personal", "Java", "JavaFX", "2024"]}
                 />

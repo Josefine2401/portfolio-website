@@ -1,39 +1,458 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.too-small-message {
+  display: none;
+}
+
 .about-me-page {
   position: relative;
   min-height: 100vh;
   padding: 70px; 
-
+ 
 }
-
+ 
 .content-page {
   max-width: 1000px;
   margin: 0 auto;
 }
-
+ 
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
-
+ 
 .back-link {
   color: #1a1a1a;
   text-decoration: none;
   font-weight: 500;
 }
-
+ 
 .back-link:hover {
   text-decoration: underline;
 }
-
+ 
 .logo {
   font-family: monospace;
   font-weight: 700;
   color: #8c9a5b;
 }
-
+ 
 .about-me-page .container {
   max-width: 1100px;
   margin: 0 auto;   /* ← centrerer BOKSEN på siden */
+}
+
+.name-heading {
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin-top: 170px;
+  height: 70px;
+} 
+
+.about-me-page .profile-image {
+  width: 365px;
+  height: 390px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.profile-description {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.profile-text {
+  text-align: left;
+}
+
+.download-button{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #8c9a5b;
+  cursor: pointer;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.academic-passions {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.academic-passions .section-title {
+  font-size: 1.2rem;
+  margin-bottom: 28px;
+  max-width: 1000px;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.interest-card {
+  border: 2.5px solid #979797;
+  background-color: #ffffff;
+  padding: 20px 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 30px;
+  transition: transform 0.15s ease;
+}
+
+.interest-card:hover {
+  transform: translate(-2px, -2px);
+}
+
+
+.interest-icon {
+  width: 48%;
+  aspect-ratio: 1 / 1; /* sikrer, at billedet forbliver kvadratisk */
+  object-fit: cover;
+  margin-bottom: 4px;
+  align-self: center; /* centrerer billedet i kortet */
+}
+
+.interest-title {
+  font-size: 0.87rem;
+  color: #2c2d30;
+  font-weight: 500;
+  text-align: center; /* centrerer titlen i kortet */
+}
+
+.section-doings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.now-card {
+  border-radius: 4px;
+  border: 2.5px solid #979797;
+  background: #fff;
+  padding: 26px 26px 22px;
+  text-align: left;
+    transition: transform 0.15s ease;
+}
+
+.now-card:hover {
+  transform: translate(-2px, -2px);
+}
+ 
+.top-label {
+  display: inline-flex;
+  align-items: left;
+  gap: 8px;
+  font-family: monospace;
+  font-size: 1rem;
+  color: #ff3d7f;
+  margin-bottom: 18px;
+}
+ 
+.blip {
+  width: 9px;
+  height: 9px;
+  background: #ff3d7f;
+  border-radius: 50%;
+  animation: pulse 1.3s ease-in-out infinite;
+  margin-top: 7.8px;
+
+}
+ 
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+ 
+.now-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+ 
+.now-item:last-child {
+  margin-bottom: 0;
+}
+ 
+.now-item .emoji {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+ 
+.now-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8a8b8e;
+  margin: 0 0 2px 0;
+  font-weight: 600;
+  text-align: left;
+}
+ 
+.now-item p {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #2c2d30;
+  text-align: left;
+}
+ 
+.contact-section {
+  margin-top: 60px;
+}
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 15px;
+  background: transparent;
+  color: #000000;
+  font-weight: 500;
+  font-size: 15px;
+  border: 2px solid #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #8c9a5b;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1015px) {
+  .about-me-page {
+    padding: 40px 24px;
+  }
+
+  .content-page {
+    text-align: center;
+  }
+
+  .topbar {
+    text-align: left;
+  }
+
+  .profile-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .about-me-page .profile-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 365 / 390;
+    margin: 0 auto;
+  }
+
+  .name-heading {
+    font-size: 2.4rem;
+    margin-top: 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .profile-description {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 15px auto 0;
+  }
+
+   .download-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0; /* auto centrerer block elementet horisontalt */
+    text-align: left; 
+  }
+
+  .academic-passions .section-title {
+    text-align: center;
+  }
+
+  .section-doings .section-title {
+    text-align: center;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .interest-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .section-doings {
+    align-items: center;
+  }
+
+  .now-card {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .top-label {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-me-page {
+    padding: 24px 16px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .about-me-page .profile-image {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+
+  .name-heading {
+    font-size: 1.9rem;
+    margin: 0px;
+  }
+
+  .profile-description {
+    text-align: center;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .download-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0; /* auto centrerer block elementet horisontalt */
+    text-align: left; 
+    font-size: 1.1rem;
+  }
+
+  .academic-passions {
+    margin-top: 50px;
+  }
+  .academic-passions .section-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .section-doings {
+    margin-top: 50px;
+  }
+
+  .section-doings .section-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+  }
+
+  .interest-card {
+    width: 100%;
+    max-width: none; 
+    padding: 10px 30px;
+    margin-bottom: 0;
+  }
+
+  .interest-title {
+    font-size: 0.79rem;
+  }
+
+  .interest-icon {
+    width: 45%;
+  }
+
+  .now-card {
+    padding: 20px 18px 18px;
+  }
+
+  .blip {
+    width: 7px;
+    height: 7px;
+    margin-top: 6.2px;
+  }
+
+  .now-item {
+    gap: 8px;
+  }
+
+  .top-label {
+    font-size: 0.85rem;
+  }
+
+  .now-label p {
+    font-size: 0.79rem;
+  }
+
+  .contact-section {
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .content-page {
+    display: none;
+  }
+
+  .too-small-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+    text-align: center;
+    font-size: 1rem;
+    color: #1a1a1a;
+    background-color: #f2f0eb;
+  }
 }
