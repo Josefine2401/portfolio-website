@@ -18,7 +18,7 @@ function Launch() {
                     showCursor={true}
                 />
             <p className="subtitle">
-                Masters Student in Interaction Design. <br />
+                Master's student in Interaction Design. <br />
                 Explore my work and learn more about me below!
             </p>
             </header>
@@ -41,7 +41,7 @@ function Launch() {
                 </span>
                 </div>
                 <h2>Projects</h2>
-                <p>Student and academic work</p>
+                <p>Student & academic work</p>
             </a>
         </div>
 
