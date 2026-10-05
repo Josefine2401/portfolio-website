@@ -8,6 +8,7 @@ import CV from "../../assets/CV - Josefine Palsgaard Wyrtz.pdf";
 import Bolt from "../../assets/pixel-bolt.png";
 import Java from "../../assets/java.png";
 import Coding from "../../assets/Coding.png";
+import Cog from "../../assets/cogwheel.png";
 
 
 export default function AboutMe() {
@@ -64,7 +65,7 @@ export default function AboutMe() {
               <div className="section-title">What am I working on in September?</div>
               <div className="now-card">
                 <div className="top-label">
-                  <span className="blip"></span>UPDATED IN SEPTEMBER 2026 
+                  <span className="blip"></span>UPDATED IN OCTOBER 2026 
                 </div>
                 <div className="now-item">
                   <span className="emoji">💻</span>
@@ -115,6 +116,12 @@ const interests = [
     title: "Cloud Platforms and Infrastructure",
   },
   {
+    image: Cog,
+    alt: "pixel art of a cogwheel",
+    title: "ERP Implementation and Business Processes"
+  },
+
+  {
     image: Bolt,
     alt: "pixel art of a bolt",
     title: "Agile Software Engineering",  },
@@ -123,9 +130,11 @@ const interests = [
     alt: "pixel art of a coffee cup",
     title: "Java Programming",
   },
+  /*
   {
     image: Coding,
     alt: "pixel art icon",
     title: "Frontend and Backend Development",
   },
+  */
 ];
