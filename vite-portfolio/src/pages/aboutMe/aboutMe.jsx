@@ -62,7 +62,7 @@ export default function AboutMe() {
             </div>
 
             <span className="section-doings">
-              <div className="section-title">What am I working on in September?</div>
+              <div className="section-title">What am I working on?</div>
               <div className="now-card">
                 <div className="top-label">
                   <span className="blip"></span>UPDATED IN OCTOBER 2026 
@@ -71,21 +71,21 @@ export default function AboutMe() {
                   <span className="emoji">💻</span>
                   <div>
                     <p className="now-label">Working On</p>
-                    <p>Java MOOC.fi & Mircosoft's Azure/Cloud fundamentals</p>
+                    <p>Microsoft Learn: Introduction to supply chain management <br></br> in Dynamics 365 & Java MOOC.fi</p>
                   </div>
                 </div>
                 <div className="now-item">
-                  <span className="emoji">🎧</span>
+                  <span className="emoji">⭐</span>
                   <div>
-                    <p className="now-label">Listening to</p>
-                    <p>Podcast: Hvis du tør</p>
+                    <p className="now-label">Course completed</p>
+                    <p>Microsoft Learn: Introduction to cloud infrastructure</p>
                   </div>
                 </div>
                 <div className="now-item">
                   <span className="emoji">📖</span>
                   <div>
                     <p className="now-label">Reading</p>
-                    <p>Mellem to verdener by Marion Dampier Jeans</p>
+                    <p>Forandringsledelse: Teori og praksis by Bjarne Kousholt</p>
                   </div>
                 </div>
               </div>
