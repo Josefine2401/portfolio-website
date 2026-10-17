@@ -113,18 +113,18 @@ const interests = [
   {
     image: Cloud,
     alt: "pixel art of a cloud",
-    title: "Cloud Platforms and Infrastructure",
+    title: "Cloud Platforms & Infrastructure",
   },
   {
     image: Cog,
     alt: "pixel art of a cogwheel",
-    title: "ERP Implementation and Business Processes"
+    title: "ERP Implementation & Business Processes"
   },
 
   {
     image: Bolt,
     alt: "pixel art of a bolt",
-    title: "Agile Software Engineering",  },
+    title: "Agile & Change Management",  },
   {
     image: Java,
     alt: "pixel art of a coffee cup",
